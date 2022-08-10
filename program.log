@@ -1,0 +1,1824 @@
+2022-08-10 03:31:32,804 - telegram.ext.dispatcher - DEBUG - Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x0000026119786458>
+2022-08-10 03:31:32,805 - apscheduler.scheduler - INFO - Scheduler started
+2022-08-10 03:31:32,807 - apscheduler.scheduler - DEBUG - Looking for jobs to run
+2022-08-10 03:31:32,807 - telegram.bot - DEBUG - Entering: get_me
+2022-08-10 03:31:32,808 - apscheduler.scheduler - DEBUG - No jobs; waiting until a job is added
+2022-08-10 03:31:33,346 - telegram.bot - DEBUG - {'can_read_all_group_messages': False, 'id': 5477747318, 'supports_inline_queries': False, 'can_join_groups': True, 'username': 'Timbbbot', 'is_bot': True, 'first_name': 'Timbot'}
+2022-08-10 03:31:33,346 - telegram.bot - DEBUG - Exiting: get_me
+2022-08-10 03:31:33,353 - telegram.ext.updater - DEBUG - Bot:5477747318:dispatcher - started
+2022-08-10 03:31:33,354 - telegram.ext.updater - DEBUG - Bot:5477747318:updater - started
+2022-08-10 03:31:33,354 - telegram.ext.updater - DEBUG - Updater thread started (polling)
+2022-08-10 03:31:33,354 - telegram.ext.updater - DEBUG - Start network loop retry bootstrap del webhook
+2022-08-10 03:31:33,355 - telegram.ext.updater - DEBUG - Deleting webhook
+2022-08-10 03:31:33,355 - telegram.bot - DEBUG - Entering: delete_webhook
+2022-08-10 03:31:33,359 - telegram.ext.updater - DEBUG - Waiting for Dispatcher and polling to start
+2022-08-10 03:31:33,363 - telegram.ext.dispatcher - DEBUG - Dispatcher started
+2022-08-10 03:31:33,464 - telegram.bot - DEBUG - True
+2022-08-10 03:31:33,465 - telegram.bot - DEBUG - Exiting: delete_webhook
+2022-08-10 03:31:33,465 - telegram.ext.updater - DEBUG - Bootstrap done
+2022-08-10 03:31:33,465 - telegram.ext.updater - DEBUG - Start network loop retry getting Updates
+2022-08-10 03:31:33,466 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:31:37,589 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:31:37,590 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:31:37,591 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:31:38,601 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:31:43,246 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:31:43,247 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:31:43,247 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:31:44,751 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:31:50,190 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:31:50,191 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:31:50,191 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:31:52,441 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:31:55,957 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:31:55,958 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:31:55,959 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:31:59,348 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:32:02,151 - telegram.bot - DEBUG - Getting updates: [147900154]
+2022-08-10 03:32:02,152 - telegram.bot - DEBUG - [<telegram.update.Update object at 0x00000261197A8A08>]
+2022-08-10 03:32:02,153 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:32:02,154 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:32:02,155 - telegram.ext.dispatcher - DEBUG - Processing Update: {'message': {'photo': [], 'entities': [{'offset': 0, 'type': 'bot_command', 'length': 7}], 'chat': {'type': 'private', 'last_name': 'Hell', 'username': 'Goto_hel', 'first_name': 'Goto', 'id': 114541721}, 'message_id': 373, 'delete_chat_photo': False, 'date': 1660087922, 'channel_chat_created': False, 'new_chat_photo': [], 'supergroup_chat_created': False, 'text': '/newcat', 'caption_entities': [], 'new_chat_members': [], 'group_chat_created': False, 'from': {'language_code': 'en', 'id': 114541721, 'last_name': 'Hell', 'username': 'Goto_hel', 'is_bot': False, 'first_name': 'Goto'}}, 'update_id': 147900154}
+2022-08-10 03:32:02,176 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.thecatapi.com:443
+2022-08-10 03:32:02,896 - urllib3.connectionpool - DEBUG - https://api.thecatapi.com:443 "GET /v1/images/search HTTP/1.1" 200 101
+2022-08-10 03:32:02,902 - telegram.bot - DEBUG - Entering: send_photo
+2022-08-10 03:32:03,354 - telegram.bot - DEBUG - {'photo': [{'file_id': 'AgACAgQAAxkDAAIBdmLy7nOTHRVXI6QyMThGaRUwMieKAAK5qDEbjdS8UkoqFrLHTEpmAQADAgADcwADKQQ', 'width': 90, 'height': 87, 'file_unique_id': 'AQADuagxG43UvFJ4', 'file_size': 2169}, {'file_id': 'AgACAgQAAxkDAAIBdmLy7nOTHRVXI6QyMThGaRUwMieKAAK5qDEbjdS8UkoqFrLHTEpmAQADAgADbQADKQQ', 'width': 320, 'height': 310, 'file_unique_id': 'AQADuagxG43UvFJy', 'file_size': 29723}, {'file_id': 'AgACAgQAAxkDAAIBdmLy7nOTHRVXI6QyMThGaRUwMieKAAK5qDEbjdS8UkoqFrLHTEpmAQADAgADeAADKQQ', 'width': 500, 'height': 485, 'file_unique_id': 'AQADuagxG43UvFJ9', 'file_size': 60310}], 'entities': [], 'chat': {'type': 'private', 'last_name': 'Hell', 'username': 'Goto_hel', 'first_name': 'Goto', 'id': 114541721}, 'message_id': 374, 'delete_chat_photo': False, 'date': 1660087923, 'channel_chat_created': False, 'new_chat_photo': [], 'supergroup_chat_created': False, 'caption_entities': [], 'new_chat_members': [], 'group_chat_created': False, 'from': {'id': 5477747318, 'username': 'Timbbbot', 'is_bot': True, 'first_name': 'Timbot'}}
+2022-08-10 03:32:03,355 - telegram.bot - DEBUG - Exiting: send_photo
+2022-08-10 03:32:03,356 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "kittybot.py", line 43, in new_cat
+    logging.INFO('ещё один кот отравлен')
+TypeError: 'int' object is not callable
+2022-08-10 03:32:04,573 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:32:04,574 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:32:04,574 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:32:05,581 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:32:15,697 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:32:15,697 - telegram.bot - DEBUG - []
+2022-08-10 03:32:15,697 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:32:15,698 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:32:16,405 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:32:16,405 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:32:16,406 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:32:17,413 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:32:27,533 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:32:27,534 - telegram.bot - DEBUG - []
+2022-08-10 03:32:27,534 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:32:27,534 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:32:31,976 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:32:31,976 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:32:31,977 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:32:32,987 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:32:43,107 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:32:43,107 - telegram.bot - DEBUG - []
+2022-08-10 03:32:43,107 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:32:43,107 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:32:53,221 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:32:53,222 - telegram.bot - DEBUG - []
+2022-08-10 03:32:53,222 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:32:53,223 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:33:03,334 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:33:03,334 - telegram.bot - DEBUG - []
+2022-08-10 03:33:03,335 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:33:03,335 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:33:13,461 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:33:13,461 - telegram.bot - DEBUG - []
+2022-08-10 03:33:13,461 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:33:13,462 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:33:19,001 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:33:19,002 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:33:19,002 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:33:20,010 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:33:30,135 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:33:30,135 - telegram.bot - DEBUG - []
+2022-08-10 03:33:30,136 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:33:30,136 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:33:40,273 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:33:40,273 - telegram.bot - DEBUG - []
+2022-08-10 03:33:40,274 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:33:40,274 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:33:50,407 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:33:50,407 - telegram.bot - DEBUG - []
+2022-08-10 03:33:50,407 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:33:50,408 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:34:00,515 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:34:00,516 - telegram.bot - DEBUG - []
+2022-08-10 03:34:00,516 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:34:00,516 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:34:01,627 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:34:01,628 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:34:01,628 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:34:02,631 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:34:12,742 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:34:12,743 - telegram.bot - DEBUG - []
+2022-08-10 03:34:12,743 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:34:12,743 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:34:22,855 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:34:22,856 - telegram.bot - DEBUG - []
+2022-08-10 03:34:22,856 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:34:22,856 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:34:33,006 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:34:33,007 - telegram.bot - DEBUG - []
+2022-08-10 03:34:33,007 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:34:33,007 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:34:35,784 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:34:35,784 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:34:35,784 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:34:36,797 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:34:46,900 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:34:46,901 - telegram.bot - DEBUG - []
+2022-08-10 03:34:46,901 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:34:46,901 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:34:57,148 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:34:57,149 - telegram.bot - DEBUG - []
+2022-08-10 03:34:57,149 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:34:57,149 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:35:07,266 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:35:07,266 - telegram.bot - DEBUG - []
+2022-08-10 03:35:07,267 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:35:07,267 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:35:09,950 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:35:09,951 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:35:09,951 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:35:10,965 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:35:21,080 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:35:21,080 - telegram.bot - DEBUG - []
+2022-08-10 03:35:21,081 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:35:21,081 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:35:31,194 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:35:31,194 - telegram.bot - DEBUG - []
+2022-08-10 03:35:31,194 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:35:31,195 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:35:41,305 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:35:41,306 - telegram.bot - DEBUG - []
+2022-08-10 03:35:41,306 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:35:41,306 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:35:44,127 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:35:44,127 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:35:44,128 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:35:45,133 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:35:55,242 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:35:55,242 - telegram.bot - DEBUG - []
+2022-08-10 03:35:55,243 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:35:55,243 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:36:05,346 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:36:05,347 - telegram.bot - DEBUG - []
+2022-08-10 03:36:05,347 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:36:05,348 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:36:15,453 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:36:15,453 - telegram.bot - DEBUG - []
+2022-08-10 03:36:15,453 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:36:15,454 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:36:18,290 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:36:18,291 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:36:18,292 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:36:19,305 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:36:29,412 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:36:29,413 - telegram.bot - DEBUG - []
+2022-08-10 03:36:29,413 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:36:29,413 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:36:39,520 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:36:39,521 - telegram.bot - DEBUG - []
+2022-08-10 03:36:39,521 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:36:39,522 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:36:49,813 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:36:49,813 - telegram.bot - DEBUG - []
+2022-08-10 03:36:49,813 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:36:49,814 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:36:52,476 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:36:52,477 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:36:52,477 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:36:53,485 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:37:03,739 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:37:03,740 - telegram.bot - DEBUG - []
+2022-08-10 03:37:03,740 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:37:03,741 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:37:13,869 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:37:13,870 - telegram.bot - DEBUG - []
+2022-08-10 03:37:13,870 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:37:13,870 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:37:24,013 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:37:24,014 - telegram.bot - DEBUG - []
+2022-08-10 03:37:24,014 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:37:24,015 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:37:26,676 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:37:26,676 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:37:26,677 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:37:27,687 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:37:37,837 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:37:37,837 - telegram.bot - DEBUG - []
+2022-08-10 03:37:37,838 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:37:37,838 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:37:48,075 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:37:48,076 - telegram.bot - DEBUG - []
+2022-08-10 03:37:48,076 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:37:48,076 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:37:58,181 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:37:58,182 - telegram.bot - DEBUG - []
+2022-08-10 03:37:58,182 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:37:58,182 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:38:00,876 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:38:00,877 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:38:00,878 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:38:01,889 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:38:12,140 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:38:12,141 - telegram.bot - DEBUG - []
+2022-08-10 03:38:12,141 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:38:12,141 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:38:22,261 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:38:22,261 - telegram.bot - DEBUG - []
+2022-08-10 03:38:22,262 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:38:22,262 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:38:32,364 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:38:32,365 - telegram.bot - DEBUG - []
+2022-08-10 03:38:32,365 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:38:32,366 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:38:35,078 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:38:35,078 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:38:35,079 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:38:36,093 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:38:46,202 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:38:46,203 - telegram.bot - DEBUG - []
+2022-08-10 03:38:46,203 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:38:46,204 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:38:56,365 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:38:56,366 - telegram.bot - DEBUG - []
+2022-08-10 03:38:56,366 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:38:56,367 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:39:06,472 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:39:06,472 - telegram.bot - DEBUG - []
+2022-08-10 03:39:06,472 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:39:06,473 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:39:09,246 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:39:09,247 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:39:09,247 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:39:10,248 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:39:20,365 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:39:20,366 - telegram.bot - DEBUG - []
+2022-08-10 03:39:20,366 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:39:20,366 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:39:30,476 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:39:30,476 - telegram.bot - DEBUG - []
+2022-08-10 03:39:30,477 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:39:30,477 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:39:40,598 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:39:40,598 - telegram.bot - DEBUG - []
+2022-08-10 03:39:40,599 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:39:40,599 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:39:43,411 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:39:43,412 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:39:43,413 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:39:44,413 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:39:54,526 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:39:54,527 - telegram.bot - DEBUG - []
+2022-08-10 03:39:54,527 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:39:54,528 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:40:04,783 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:40:04,783 - telegram.bot - DEBUG - []
+2022-08-10 03:40:04,783 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:40:04,784 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:40:14,917 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:40:14,917 - telegram.bot - DEBUG - []
+2022-08-10 03:40:14,917 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:40:14,917 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:40:17,579 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:40:17,579 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:40:17,579 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:40:18,589 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:40:28,710 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:40:28,710 - telegram.bot - DEBUG - []
+2022-08-10 03:40:28,710 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:40:28,711 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:40:38,838 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:40:38,839 - telegram.bot - DEBUG - []
+2022-08-10 03:40:38,839 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:40:38,839 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:40:49,018 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:40:49,018 - telegram.bot - DEBUG - []
+2022-08-10 03:40:49,019 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:40:49,020 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:40:51,885 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:40:51,886 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:40:51,886 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:40:52,897 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:41:03,000 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:41:03,000 - telegram.bot - DEBUG - []
+2022-08-10 03:41:03,000 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:41:03,000 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:41:13,112 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:41:13,112 - telegram.bot - DEBUG - []
+2022-08-10 03:41:13,112 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:41:13,112 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:41:23,218 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:41:23,218 - telegram.bot - DEBUG - []
+2022-08-10 03:41:23,218 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:41:23,219 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:41:26,051 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:41:26,051 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:41:26,052 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:41:27,053 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:41:37,165 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:41:37,165 - telegram.bot - DEBUG - []
+2022-08-10 03:41:37,166 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:41:37,166 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:41:47,285 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:41:47,285 - telegram.bot - DEBUG - []
+2022-08-10 03:41:47,285 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:41:47,286 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:41:57,394 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:41:57,394 - telegram.bot - DEBUG - []
+2022-08-10 03:41:57,394 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:41:57,394 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:42:00,255 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:42:00,256 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:42:00,256 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:42:01,264 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:42:11,373 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:42:11,373 - telegram.bot - DEBUG - []
+2022-08-10 03:42:11,373 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:42:11,374 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:42:21,481 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:42:21,481 - telegram.bot - DEBUG - []
+2022-08-10 03:42:21,481 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:42:21,481 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:42:31,620 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:42:31,621 - telegram.bot - DEBUG - []
+2022-08-10 03:42:31,621 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:42:31,621 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:42:34,422 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:42:34,423 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:42:34,424 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:42:35,434 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:42:45,547 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:42:45,547 - telegram.bot - DEBUG - []
+2022-08-10 03:42:45,547 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:42:45,548 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:42:55,658 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:42:55,659 - telegram.bot - DEBUG - []
+2022-08-10 03:42:55,659 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:42:55,659 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:43:05,764 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:43:05,764 - telegram.bot - DEBUG - []
+2022-08-10 03:43:05,765 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:43:05,765 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:43:08,594 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:43:08,595 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:43:08,595 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:43:09,608 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:43:20,399 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:43:20,399 - telegram.bot - DEBUG - []
+2022-08-10 03:43:20,399 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:43:20,399 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:43:30,511 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:43:30,512 - telegram.bot - DEBUG - []
+2022-08-10 03:43:30,512 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:43:30,512 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:43:40,614 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:43:40,614 - telegram.bot - DEBUG - []
+2022-08-10 03:43:40,614 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:43:40,615 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:43:42,890 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:43:42,890 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:43:42,890 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:43:43,903 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:43:54,051 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:43:54,051 - telegram.bot - DEBUG - []
+2022-08-10 03:43:54,051 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:43:54,051 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:44:04,192 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:44:04,192 - telegram.bot - DEBUG - []
+2022-08-10 03:44:04,192 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:44:04,193 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:44:14,293 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:44:14,294 - telegram.bot - DEBUG - []
+2022-08-10 03:44:14,294 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:44:14,294 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:44:17,055 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:44:17,056 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:44:17,057 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:44:18,072 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:44:28,228 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:44:28,228 - telegram.bot - DEBUG - []
+2022-08-10 03:44:28,229 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:44:28,229 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:44:38,334 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:44:38,335 - telegram.bot - DEBUG - []
+2022-08-10 03:44:38,335 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:44:38,335 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:44:48,448 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:44:48,448 - telegram.bot - DEBUG - []
+2022-08-10 03:44:48,448 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:44:48,449 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:44:51,294 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:44:51,294 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:44:51,294 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:44:52,305 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:45:02,489 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:45:02,489 - telegram.bot - DEBUG - []
+2022-08-10 03:45:02,489 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:45:02,490 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:45:12,648 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:45:12,648 - telegram.bot - DEBUG - []
+2022-08-10 03:45:12,649 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:45:12,649 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:45:23,167 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:45:23,168 - telegram.bot - DEBUG - []
+2022-08-10 03:45:23,168 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:45:23,168 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:45:25,538 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:45:25,539 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:45:25,540 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:45:26,542 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:45:36,645 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:45:36,646 - telegram.bot - DEBUG - []
+2022-08-10 03:45:36,646 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:45:36,646 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:45:46,756 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:45:46,757 - telegram.bot - DEBUG - []
+2022-08-10 03:45:46,757 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:45:46,757 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:45:56,975 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:45:56,976 - telegram.bot - DEBUG - []
+2022-08-10 03:45:56,976 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:45:56,976 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:45:59,697 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:45:59,698 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:45:59,698 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:46:00,705 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:46:10,830 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:46:10,831 - telegram.bot - DEBUG - []
+2022-08-10 03:46:10,831 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:46:10,831 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:46:20,997 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:46:20,998 - telegram.bot - DEBUG - []
+2022-08-10 03:46:20,998 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:46:20,999 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:46:31,121 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:46:31,121 - telegram.bot - DEBUG - []
+2022-08-10 03:46:31,122 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:46:31,122 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:46:33,898 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:46:33,898 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:46:33,899 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:46:34,902 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:46:45,146 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:46:45,147 - telegram.bot - DEBUG - []
+2022-08-10 03:46:45,147 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:46:45,147 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:46:55,259 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:46:55,259 - telegram.bot - DEBUG - []
+2022-08-10 03:46:55,259 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:46:55,260 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:47:05,436 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:47:05,437 - telegram.bot - DEBUG - []
+2022-08-10 03:47:05,437 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:47:05,437 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:47:08,306 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:47:08,307 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:47:08,307 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:47:09,313 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:47:19,466 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:47:19,467 - telegram.bot - DEBUG - []
+2022-08-10 03:47:19,467 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:47:19,468 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:47:29,603 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:47:29,603 - telegram.bot - DEBUG - []
+2022-08-10 03:47:29,603 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:47:29,604 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:47:39,839 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:47:39,840 - telegram.bot - DEBUG - []
+2022-08-10 03:47:39,840 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:47:39,840 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:47:42,468 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:47:42,469 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:47:42,469 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:47:43,484 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:47:47,805 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2022-08-10 03:47:47,806 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2022-08-10 03:47:47,807 - apscheduler.scheduler - DEBUG - Looking for jobs to run
+2022-08-10 03:47:47,807 - apscheduler.scheduler - DEBUG - No jobs; waiting until a job is added
+2022-08-10 03:47:47,808 - telegram.ext.updater - DEBUG - Stopping Updater and Dispatcher...
+2022-08-10 03:47:47,808 - telegram.ext.updater - DEBUG - Requesting Dispatcher to stop...
+2022-08-10 03:47:48,530 - telegram.ext.dispatcher - DEBUG - orderly stopping
+2022-08-10 03:47:48,531 - telegram.ext.dispatcher - DEBUG - Dispatcher thread stopped
+2022-08-10 03:47:48,531 - telegram.ext.updater - DEBUG - Bot:5477747318:dispatcher - ended
+2022-08-10 03:47:48,578 - telegram.ext.dispatcher - DEBUG - Waiting for async thread 1/4 to end
+2022-08-10 03:47:48,578 - telegram.ext.dispatcher - DEBUG - Closing run_async thread Bot:5477747318:worker:890c18c8-3c3c-4871-90ef-93b80683fde2_2/4
+2022-08-10 03:47:48,578 - telegram.ext.dispatcher - DEBUG - Closing run_async thread Bot:5477747318:worker:890c18c8-3c3c-4871-90ef-93b80683fde2_1/4
+2022-08-10 03:47:48,579 - telegram.ext.dispatcher - DEBUG - Closing run_async thread Bot:5477747318:worker:890c18c8-3c3c-4871-90ef-93b80683fde2_0/4
+2022-08-10 03:47:48,579 - telegram.ext.dispatcher - DEBUG - Closing run_async thread Bot:5477747318:worker:890c18c8-3c3c-4871-90ef-93b80683fde2_3/4
+2022-08-10 03:47:48,581 - telegram.ext.dispatcher - DEBUG - async thread 1/4 has ended
+2022-08-10 03:47:48,581 - telegram.ext.dispatcher - DEBUG - Waiting for async thread 2/4 to end
+2022-08-10 03:47:48,582 - telegram.ext.dispatcher - DEBUG - async thread 2/4 has ended
+2022-08-10 03:47:48,582 - telegram.ext.dispatcher - DEBUG - Waiting for async thread 3/4 to end
+2022-08-10 03:47:48,582 - telegram.ext.dispatcher - DEBUG - async thread 3/4 has ended
+2022-08-10 03:47:48,582 - telegram.ext.dispatcher - DEBUG - Waiting for async thread 4/4 to end
+2022-08-10 03:47:48,583 - telegram.ext.dispatcher - DEBUG - async thread 4/4 has ended
+2022-08-10 03:47:48,583 - telegram.ext.updater - DEBUG - Waiting for Bot:5477747318:dispatcher thread to end
+2022-08-10 03:47:48,583 - telegram.ext.updater - DEBUG - Bot:5477747318:dispatcher thread has ended
+2022-08-10 03:47:48,583 - telegram.ext.updater - DEBUG - Waiting for Bot:5477747318:updater thread to end
+2022-08-10 03:47:53,786 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:47:53,787 - telegram.bot - DEBUG - []
+2022-08-10 03:47:53,787 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:47:53,787 - telegram.ext.updater - DEBUG - Bot:5477747318:updater - ended
+2022-08-10 03:47:53,788 - telegram.ext.updater - DEBUG - Bot:5477747318:updater thread has ended
+2022-08-10 03:47:57,304 - telegram.ext.dispatcher - DEBUG - Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x00000195F59D6458>
+2022-08-10 03:47:57,305 - apscheduler.scheduler - INFO - Scheduler started
+2022-08-10 03:47:57,307 - apscheduler.scheduler - DEBUG - Looking for jobs to run
+2022-08-10 03:47:57,307 - apscheduler.scheduler - DEBUG - No jobs; waiting until a job is added
+2022-08-10 03:47:57,308 - telegram.bot - DEBUG - Entering: get_me
+2022-08-10 03:47:57,698 - telegram.bot - DEBUG - {'first_name': 'Timbot', 'can_join_groups': True, 'can_read_all_group_messages': False, 'username': 'Timbbbot', 'supports_inline_queries': False, 'id': 5477747318, 'is_bot': True}
+2022-08-10 03:47:57,699 - telegram.bot - DEBUG - Exiting: get_me
+2022-08-10 03:47:57,700 - telegram.ext.updater - DEBUG - Bot:5477747318:dispatcher - started
+2022-08-10 03:47:57,702 - telegram.ext.updater - DEBUG - Bot:5477747318:updater - started
+2022-08-10 03:47:57,702 - telegram.ext.updater - DEBUG - Updater thread started (polling)
+2022-08-10 03:47:57,705 - telegram.ext.updater - DEBUG - Start network loop retry bootstrap del webhook
+2022-08-10 03:47:57,706 - telegram.ext.updater - DEBUG - Deleting webhook
+2022-08-10 03:47:57,706 - telegram.bot - DEBUG - Entering: delete_webhook
+2022-08-10 03:47:57,707 - telegram.ext.updater - DEBUG - Waiting for Dispatcher and polling to start
+2022-08-10 03:47:57,711 - telegram.ext.dispatcher - DEBUG - Dispatcher started
+2022-08-10 03:47:57,814 - telegram.bot - DEBUG - True
+2022-08-10 03:47:57,815 - telegram.bot - DEBUG - Exiting: delete_webhook
+2022-08-10 03:47:57,815 - telegram.ext.updater - DEBUG - Bootstrap done
+2022-08-10 03:47:57,815 - telegram.ext.updater - DEBUG - Start network loop retry getting Updates
+2022-08-10 03:47:57,816 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:48:07,921 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:48:07,921 - telegram.bot - DEBUG - []
+2022-08-10 03:48:07,921 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:48:07,922 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:48:16,707 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:48:16,708 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:48:16,709 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:48:17,723 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:48:22,653 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2022-08-10 03:48:22,653 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2022-08-10 03:48:22,654 - apscheduler.scheduler - DEBUG - Looking for jobs to run
+2022-08-10 03:48:22,654 - apscheduler.scheduler - DEBUG - No jobs; waiting until a job is added
+2022-08-10 03:48:22,654 - telegram.ext.updater - DEBUG - Stopping Updater and Dispatcher...
+2022-08-10 03:48:22,654 - telegram.ext.updater - DEBUG - Requesting Dispatcher to stop...
+2022-08-10 03:48:22,778 - telegram.ext.dispatcher - DEBUG - orderly stopping
+2022-08-10 03:48:22,778 - telegram.ext.dispatcher - DEBUG - Dispatcher thread stopped
+2022-08-10 03:48:22,779 - telegram.ext.updater - DEBUG - Bot:5477747318:dispatcher - ended
+2022-08-10 03:48:22,872 - telegram.ext.dispatcher - DEBUG - Waiting for async thread 1/4 to end
+2022-08-10 03:48:22,873 - telegram.ext.dispatcher - DEBUG - Closing run_async thread Bot:5477747318:worker:a0858cb6-d639-4051-b277-6158f0e9ed51_0/4
+2022-08-10 03:48:22,874 - telegram.ext.dispatcher - DEBUG - Closing run_async thread Bot:5477747318:worker:a0858cb6-d639-4051-b277-6158f0e9ed51_2/4
+2022-08-10 03:48:22,874 - telegram.ext.dispatcher - DEBUG - Closing run_async thread Bot:5477747318:worker:a0858cb6-d639-4051-b277-6158f0e9ed51_3/4
+2022-08-10 03:48:22,874 - telegram.ext.dispatcher - DEBUG - Closing run_async thread Bot:5477747318:worker:a0858cb6-d639-4051-b277-6158f0e9ed51_1/4
+2022-08-10 03:48:22,876 - telegram.ext.dispatcher - DEBUG - async thread 1/4 has ended
+2022-08-10 03:48:22,877 - telegram.ext.dispatcher - DEBUG - Waiting for async thread 2/4 to end
+2022-08-10 03:48:22,877 - telegram.ext.dispatcher - DEBUG - async thread 2/4 has ended
+2022-08-10 03:48:22,877 - telegram.ext.dispatcher - DEBUG - Waiting for async thread 3/4 to end
+2022-08-10 03:48:22,878 - telegram.ext.dispatcher - DEBUG - async thread 3/4 has ended
+2022-08-10 03:48:22,878 - telegram.ext.dispatcher - DEBUG - Waiting for async thread 4/4 to end
+2022-08-10 03:48:22,878 - telegram.ext.dispatcher - DEBUG - async thread 4/4 has ended
+2022-08-10 03:48:22,878 - telegram.ext.updater - DEBUG - Waiting for Bot:5477747318:dispatcher thread to end
+2022-08-10 03:48:22,879 - telegram.ext.updater - DEBUG - Bot:5477747318:dispatcher thread has ended
+2022-08-10 03:48:22,879 - telegram.ext.updater - DEBUG - Waiting for Bot:5477747318:updater thread to end
+2022-08-10 03:48:27,840 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:48:27,840 - telegram.bot - DEBUG - []
+2022-08-10 03:48:27,840 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:48:27,840 - telegram.ext.updater - DEBUG - Bot:5477747318:updater - ended
+2022-08-10 03:48:27,841 - telegram.ext.updater - DEBUG - Bot:5477747318:updater thread has ended
+2022-08-10 03:48:35,306 - telegram.ext.dispatcher - DEBUG - Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x0000028D51396458>
+2022-08-10 03:48:35,307 - apscheduler.scheduler - INFO - Scheduler started
+2022-08-10 03:48:35,309 - apscheduler.scheduler - DEBUG - Looking for jobs to run
+2022-08-10 03:48:35,309 - telegram.bot - DEBUG - Entering: get_me
+2022-08-10 03:48:35,310 - apscheduler.scheduler - DEBUG - No jobs; waiting until a job is added
+2022-08-10 03:48:35,857 - telegram.bot - DEBUG - {'username': 'Timbbbot', 'can_read_all_group_messages': False, 'can_join_groups': True, 'id': 5477747318, 'supports_inline_queries': False, 'is_bot': True, 'first_name': 'Timbot'}
+2022-08-10 03:48:35,857 - telegram.bot - DEBUG - Exiting: get_me
+2022-08-10 03:48:35,858 - telegram.ext.updater - DEBUG - Bot:5477747318:dispatcher - started
+2022-08-10 03:48:35,860 - telegram.ext.updater - DEBUG - Bot:5477747318:updater - started
+2022-08-10 03:48:35,860 - telegram.ext.updater - DEBUG - Updater thread started (polling)
+2022-08-10 03:48:35,860 - telegram.ext.updater - DEBUG - Start network loop retry bootstrap del webhook
+2022-08-10 03:48:35,863 - telegram.ext.updater - DEBUG - Deleting webhook
+2022-08-10 03:48:35,864 - telegram.bot - DEBUG - Entering: delete_webhook
+2022-08-10 03:48:35,867 - telegram.ext.updater - DEBUG - Waiting for Dispatcher and polling to start
+2022-08-10 03:48:35,869 - telegram.ext.dispatcher - DEBUG - Dispatcher started
+2022-08-10 03:48:35,979 - telegram.bot - DEBUG - True
+2022-08-10 03:48:35,980 - telegram.bot - DEBUG - Exiting: delete_webhook
+2022-08-10 03:48:35,980 - telegram.ext.updater - DEBUG - Bootstrap done
+2022-08-10 03:48:35,980 - telegram.ext.updater - DEBUG - Start network loop retry getting Updates
+2022-08-10 03:48:35,981 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:48:46,090 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:48:46,090 - telegram.bot - DEBUG - []
+2022-08-10 03:48:46,090 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:48:46,090 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:48:50,889 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:48:50,890 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:48:50,890 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:48:51,643 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2022-08-10 03:48:51,644 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2022-08-10 03:48:51,644 - apscheduler.scheduler - DEBUG - Looking for jobs to run
+2022-08-10 03:48:51,645 - apscheduler.scheduler - DEBUG - No jobs; waiting until a job is added
+2022-08-10 03:48:51,645 - telegram.ext.updater - DEBUG - Stopping Updater and Dispatcher...
+2022-08-10 03:48:51,646 - telegram.ext.updater - DEBUG - Requesting Dispatcher to stop...
+2022-08-10 03:48:51,893 - telegram.ext.updater - DEBUG - Bot:5477747318:updater - ended
+2022-08-10 03:48:51,908 - telegram.ext.dispatcher - DEBUG - orderly stopping
+2022-08-10 03:48:51,909 - telegram.ext.dispatcher - DEBUG - Dispatcher thread stopped
+2022-08-10 03:48:51,910 - telegram.ext.updater - DEBUG - Bot:5477747318:dispatcher - ended
+2022-08-10 03:48:51,971 - telegram.ext.dispatcher - DEBUG - Waiting for async thread 1/4 to end
+2022-08-10 03:48:51,972 - telegram.ext.dispatcher - DEBUG - Closing run_async thread Bot:5477747318:worker:ffb950b9-d2d4-4e03-8b59-8d3bdad6d8b1_1/4
+2022-08-10 03:48:51,972 - telegram.ext.dispatcher - DEBUG - Closing run_async thread Bot:5477747318:worker:ffb950b9-d2d4-4e03-8b59-8d3bdad6d8b1_0/4
+2022-08-10 03:48:51,972 - telegram.ext.dispatcher - DEBUG - Closing run_async thread Bot:5477747318:worker:ffb950b9-d2d4-4e03-8b59-8d3bdad6d8b1_2/4
+2022-08-10 03:48:51,973 - telegram.ext.dispatcher - DEBUG - Closing run_async thread Bot:5477747318:worker:ffb950b9-d2d4-4e03-8b59-8d3bdad6d8b1_3/4
+2022-08-10 03:48:51,974 - telegram.ext.dispatcher - DEBUG - async thread 1/4 has ended
+2022-08-10 03:48:51,976 - telegram.ext.dispatcher - DEBUG - Waiting for async thread 2/4 to end
+2022-08-10 03:48:51,976 - telegram.ext.dispatcher - DEBUG - async thread 2/4 has ended
+2022-08-10 03:48:51,977 - telegram.ext.dispatcher - DEBUG - Waiting for async thread 3/4 to end
+2022-08-10 03:48:51,978 - telegram.ext.dispatcher - DEBUG - async thread 3/4 has ended
+2022-08-10 03:48:51,978 - telegram.ext.dispatcher - DEBUG - Waiting for async thread 4/4 to end
+2022-08-10 03:48:51,978 - telegram.ext.dispatcher - DEBUG - async thread 4/4 has ended
+2022-08-10 03:48:51,979 - telegram.ext.updater - DEBUG - Waiting for Bot:5477747318:dispatcher thread to end
+2022-08-10 03:48:51,980 - telegram.ext.updater - DEBUG - Bot:5477747318:dispatcher thread has ended
+2022-08-10 03:48:51,980 - telegram.ext.updater - DEBUG - Waiting for Bot:5477747318:updater thread to end
+2022-08-10 03:48:51,980 - telegram.ext.updater - DEBUG - Bot:5477747318:updater thread has ended
+2022-08-10 03:49:03,621 - telegram.ext.dispatcher - DEBUG - Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x000001631C9C6458>
+2022-08-10 03:49:03,622 - apscheduler.scheduler - INFO - Scheduler started
+2022-08-10 03:49:03,623 - apscheduler.scheduler - DEBUG - Looking for jobs to run
+2022-08-10 03:49:03,623 - telegram.bot - DEBUG - Entering: get_me
+2022-08-10 03:49:03,623 - apscheduler.scheduler - DEBUG - No jobs; waiting until a job is added
+2022-08-10 03:49:04,134 - telegram.bot - DEBUG - {'can_join_groups': True, 'first_name': 'Timbot', 'supports_inline_queries': False, 'username': 'Timbbbot', 'is_bot': True, 'id': 5477747318, 'can_read_all_group_messages': False}
+2022-08-10 03:49:04,134 - telegram.bot - DEBUG - Exiting: get_me
+2022-08-10 03:49:04,136 - telegram.ext.updater - DEBUG - Bot:5477747318:dispatcher - started
+2022-08-10 03:49:04,137 - telegram.ext.updater - DEBUG - Bot:5477747318:updater - started
+2022-08-10 03:49:04,137 - telegram.ext.updater - DEBUG - Updater thread started (polling)
+2022-08-10 03:49:04,140 - telegram.ext.updater - DEBUG - Start network loop retry bootstrap del webhook
+2022-08-10 03:49:04,140 - telegram.ext.updater - DEBUG - Deleting webhook
+2022-08-10 03:49:04,140 - telegram.ext.updater - DEBUG - Waiting for Dispatcher and polling to start
+2022-08-10 03:49:04,141 - telegram.bot - DEBUG - Entering: delete_webhook
+2022-08-10 03:49:04,143 - telegram.ext.dispatcher - DEBUG - Dispatcher started
+2022-08-10 03:49:04,322 - telegram.bot - DEBUG - True
+2022-08-10 03:49:04,323 - telegram.bot - DEBUG - Exiting: delete_webhook
+2022-08-10 03:49:04,323 - telegram.ext.updater - DEBUG - Bootstrap done
+2022-08-10 03:49:04,323 - telegram.ext.updater - DEBUG - Start network loop retry getting Updates
+2022-08-10 03:49:04,324 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:49:08,521 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:49:08,521 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:49:08,522 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:49:09,533 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:49:14,171 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:49:14,171 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:49:14,172 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:49:15,682 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:49:19,983 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:49:19,984 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:49:19,984 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:49:22,236 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:49:26,953 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:49:26,954 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:49:26,954 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:49:30,331 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:49:35,721 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:49:35,722 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:49:35,722 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:49:40,799 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:49:44,327 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:49:44,328 - telegram.ext.dispatcher - DEBUG - Processing Update: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:49:44,329 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 646, in _network_loop_retry
+    if not action_cb():
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\updater.py", line 601, in polling_action_cb
+    allowed_updates=allowed_updates,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\extbot.py", line 228, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 130, in decorator
+    result = func(*args, **kwargs)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 2865, in get_updates
+    api_kwargs=api_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\bot.py", line 296, in _post
+    f'{self.base_url}/{endpoint}', data=data, timeout=effective_timeout
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 361, in post
+    **urlopen_kwargs,
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\utils\request.py", line 283, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2022-08-10 03:49:51,926 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:50:02,029 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:50:02,029 - telegram.bot - DEBUG - []
+2022-08-10 03:50:02,030 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:50:02,030 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:50:12,213 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:50:12,214 - telegram.bot - DEBUG - []
+2022-08-10 03:50:12,214 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:50:12,215 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:50:22,322 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:50:22,323 - telegram.bot - DEBUG - []
+2022-08-10 03:50:22,323 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:50:22,323 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:50:32,430 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:50:32,430 - telegram.bot - DEBUG - []
+2022-08-10 03:50:32,431 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:50:32,431 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:50:42,537 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:50:42,537 - telegram.bot - DEBUG - []
+2022-08-10 03:50:42,538 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:50:42,538 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:50:43,685 - telegram.bot - DEBUG - Getting updates: [147900156]
+2022-08-10 03:50:43,687 - telegram.bot - DEBUG - [<telegram.update.Update object at 0x000001631C9E7B88>]
+2022-08-10 03:50:43,687 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:50:43,688 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:50:43,688 - telegram.ext.dispatcher - DEBUG - Processing Update: {'message': {'chat': {'id': 114541721, 'last_name': 'Hell', 'type': 'private', 'first_name': 'Goto', 'username': 'Goto_hel'}, 'supergroup_chat_created': False, 'delete_chat_photo': False, 'group_chat_created': False, 'message_id': 377, 'text': '/newcat', 'date': 1660089044, 'photo': [], 'new_chat_photo': [], 'caption_entities': [], 'entities': [{'type': 'bot_command', 'length': 7, 'offset': 0}], 'channel_chat_created': False, 'new_chat_members': [], 'from': {'language_code': 'en', 'first_name': 'Goto', 'username': 'Goto_hel', 'is_bot': False, 'id': 114541721, 'last_name': 'Hell'}}, 'update_id': 147900156}
+2022-08-10 03:50:43,713 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.thecatapi.com:443
+2022-08-10 03:50:44,314 - urllib3.connectionpool - DEBUG - https://api.thecatapi.com:443 "GET /v1/images/search HTTP/1.1" 200 101
+2022-08-10 03:50:44,324 - telegram.bot - DEBUG - Entering: send_photo
+2022-08-10 03:50:45,014 - telegram.bot - DEBUG - {'chat': {'id': 114541721, 'last_name': 'Hell', 'type': 'private', 'first_name': 'Goto', 'username': 'Goto_hel'}, 'supergroup_chat_created': False, 'delete_chat_photo': False, 'group_chat_created': False, 'message_id': 378, 'date': 1660089045, 'photo': [{'file_unique_id': 'AQADgqsxG6LtJVF4', 'width': 90, 'file_size': 1788, 'height': 90, 'file_id': 'AgACAgQAAxkDAAIBemLy8tXyrFGC4oLyc7fKYyIjyAbCAAKCqzEbou0lUXZO8oVBv2_4AQADAgADcwADKQQ'}, {'file_unique_id': 'AQADgqsxG6LtJVFy', 'width': 320, 'file_size': 23434, 'height': 320, 'file_id': 'AgACAgQAAxkDAAIBemLy8tXyrFGC4oLyc7fKYyIjyAbCAAKCqzEbou0lUXZO8oVBv2_4AQADAgADbQADKQQ'}, {'file_unique_id': 'AQADgqsxG6LtJVF-', 'width': 960, 'file_size': 81114, 'height': 960, 'file_id': 'AgACAgQAAxkDAAIBemLy8tXyrFGC4oLyc7fKYyIjyAbCAAKCqzEbou0lUXZO8oVBv2_4AQADAgADeQADKQQ'}, {'file_unique_id': 'AQADgqsxG6LtJVF9', 'width': 800, 'file_size': 93922, 'height': 800, 'file_id': 'AgACAgQAAxkDAAIBemLy8tXyrFGC4oLyc7fKYyIjyAbCAAKCqzEbou0lUXZO8oVBv2_4AQADAgADeAADKQQ'}], 'new_chat_photo': [], 'caption_entities': [], 'entities': [], 'channel_chat_created': False, 'new_chat_members': [], 'from': {'first_name': 'Timbot', 'username': 'Timbbbot', 'is_bot': True, 'id': 5477747318}}
+2022-08-10 03:50:45,015 - telegram.bot - DEBUG - Exiting: send_photo
+2022-08-10 03:50:45,015 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "kittybot.py", line 48, in new_cat
+    logging.WARNING('ещё один кот отравлен')
+TypeError: 'int' object is not callable
+2022-08-10 03:50:53,800 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:50:53,800 - telegram.bot - DEBUG - []
+2022-08-10 03:50:53,801 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:50:53,801 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:51:03,950 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:51:03,951 - telegram.bot - DEBUG - []
+2022-08-10 03:51:03,951 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:51:03,952 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:51:14,074 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:51:14,075 - telegram.bot - DEBUG - []
+2022-08-10 03:51:14,075 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:51:14,075 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:51:24,190 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:51:24,190 - telegram.bot - DEBUG - []
+2022-08-10 03:51:24,190 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:51:24,191 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:51:34,294 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:51:34,294 - telegram.bot - DEBUG - []
+2022-08-10 03:51:34,294 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:51:34,294 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:51:44,403 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:51:44,403 - telegram.bot - DEBUG - []
+2022-08-10 03:51:44,404 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:51:44,404 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:51:54,515 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:51:54,515 - telegram.bot - DEBUG - []
+2022-08-10 03:51:54,516 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:51:54,516 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:52:05,026 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:52:05,027 - telegram.bot - DEBUG - []
+2022-08-10 03:52:05,027 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:52:05,027 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:52:15,195 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:52:15,195 - telegram.bot - DEBUG - []
+2022-08-10 03:52:15,196 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:52:15,196 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:52:25,316 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:52:25,317 - telegram.bot - DEBUG - []
+2022-08-10 03:52:25,317 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:52:25,317 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:52:31,126 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2022-08-10 03:52:31,127 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2022-08-10 03:52:31,128 - apscheduler.scheduler - DEBUG - Looking for jobs to run
+2022-08-10 03:52:31,128 - apscheduler.scheduler - DEBUG - No jobs; waiting until a job is added
+2022-08-10 03:52:31,129 - telegram.ext.updater - DEBUG - Stopping Updater and Dispatcher...
+2022-08-10 03:52:31,129 - telegram.ext.updater - DEBUG - Requesting Dispatcher to stop...
+2022-08-10 03:52:31,918 - telegram.ext.dispatcher - DEBUG - orderly stopping
+2022-08-10 03:52:31,918 - telegram.ext.dispatcher - DEBUG - Dispatcher thread stopped
+2022-08-10 03:52:31,919 - telegram.ext.updater - DEBUG - Bot:5477747318:dispatcher - ended
+2022-08-10 03:52:32,013 - telegram.ext.dispatcher - DEBUG - Waiting for async thread 1/4 to end
+2022-08-10 03:52:32,014 - telegram.ext.dispatcher - DEBUG - Closing run_async thread Bot:5477747318:worker:0543fc8f-8852-4494-82bb-3482c740cb5e_1/4
+2022-08-10 03:52:32,014 - telegram.ext.dispatcher - DEBUG - Closing run_async thread Bot:5477747318:worker:0543fc8f-8852-4494-82bb-3482c740cb5e_0/4
+2022-08-10 03:52:32,014 - telegram.ext.dispatcher - DEBUG - Closing run_async thread Bot:5477747318:worker:0543fc8f-8852-4494-82bb-3482c740cb5e_2/4
+2022-08-10 03:52:32,015 - telegram.ext.dispatcher - DEBUG - Closing run_async thread Bot:5477747318:worker:0543fc8f-8852-4494-82bb-3482c740cb5e_3/4
+2022-08-10 03:52:32,016 - telegram.ext.dispatcher - DEBUG - async thread 1/4 has ended
+2022-08-10 03:52:32,017 - telegram.ext.dispatcher - DEBUG - Waiting for async thread 2/4 to end
+2022-08-10 03:52:32,018 - telegram.ext.dispatcher - DEBUG - async thread 2/4 has ended
+2022-08-10 03:52:32,018 - telegram.ext.dispatcher - DEBUG - Waiting for async thread 3/4 to end
+2022-08-10 03:52:32,018 - telegram.ext.dispatcher - DEBUG - async thread 3/4 has ended
+2022-08-10 03:52:32,018 - telegram.ext.dispatcher - DEBUG - Waiting for async thread 4/4 to end
+2022-08-10 03:52:32,019 - telegram.ext.dispatcher - DEBUG - async thread 4/4 has ended
+2022-08-10 03:52:32,019 - telegram.ext.updater - DEBUG - Waiting for Bot:5477747318:dispatcher thread to end
+2022-08-10 03:52:32,019 - telegram.ext.updater - DEBUG - Bot:5477747318:dispatcher thread has ended
+2022-08-10 03:52:32,019 - telegram.ext.updater - DEBUG - Waiting for Bot:5477747318:updater thread to end
+2022-08-10 03:52:35,574 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:52:35,574 - telegram.bot - DEBUG - []
+2022-08-10 03:52:35,575 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:52:35,575 - telegram.ext.updater - DEBUG - Bot:5477747318:updater - ended
+2022-08-10 03:52:35,576 - telegram.ext.updater - DEBUG - Bot:5477747318:updater thread has ended
+2022-08-10 03:52:39,106 - telegram.ext.dispatcher - DEBUG - Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x0000021594776458>
+2022-08-10 03:52:39,107 - apscheduler.scheduler - INFO - Scheduler started
+2022-08-10 03:52:39,108 - apscheduler.scheduler - DEBUG - Looking for jobs to run
+2022-08-10 03:52:39,108 - apscheduler.scheduler - DEBUG - No jobs; waiting until a job is added
+2022-08-10 03:52:39,108 - telegram.bot - DEBUG - Entering: get_me
+2022-08-10 03:52:39,489 - telegram.bot - DEBUG - {'id': 5477747318, 'is_bot': True, 'supports_inline_queries': False, 'can_read_all_group_messages': False, 'first_name': 'Timbot', 'can_join_groups': True, 'username': 'Timbbbot'}
+2022-08-10 03:52:39,489 - telegram.bot - DEBUG - Exiting: get_me
+2022-08-10 03:52:39,491 - telegram.ext.updater - DEBUG - Bot:5477747318:dispatcher - started
+2022-08-10 03:52:39,493 - telegram.ext.updater - DEBUG - Bot:5477747318:updater - started
+2022-08-10 03:52:39,493 - telegram.ext.updater - DEBUG - Updater thread started (polling)
+2022-08-10 03:52:39,496 - telegram.ext.updater - DEBUG - Start network loop retry bootstrap del webhook
+2022-08-10 03:52:39,497 - telegram.ext.updater - DEBUG - Deleting webhook
+2022-08-10 03:52:39,497 - telegram.bot - DEBUG - Entering: delete_webhook
+2022-08-10 03:52:39,499 - telegram.ext.updater - DEBUG - Waiting for Dispatcher and polling to start
+2022-08-10 03:52:39,502 - telegram.ext.dispatcher - DEBUG - Dispatcher started
+2022-08-10 03:52:39,607 - telegram.bot - DEBUG - True
+2022-08-10 03:52:39,608 - telegram.bot - DEBUG - Exiting: delete_webhook
+2022-08-10 03:52:39,608 - telegram.ext.updater - DEBUG - Bootstrap done
+2022-08-10 03:52:39,608 - telegram.ext.updater - DEBUG - Start network loop retry getting Updates
+2022-08-10 03:52:39,609 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:52:49,908 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:52:49,908 - telegram.bot - DEBUG - []
+2022-08-10 03:52:49,908 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:52:49,909 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:53:00,150 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:53:00,150 - telegram.bot - DEBUG - []
+2022-08-10 03:53:00,150 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:53:00,151 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:53:10,265 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:53:10,266 - telegram.bot - DEBUG - []
+2022-08-10 03:53:10,266 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:53:10,266 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:53:20,423 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:53:20,424 - telegram.bot - DEBUG - []
+2022-08-10 03:53:20,424 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:53:20,425 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:53:30,664 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:53:30,665 - telegram.bot - DEBUG - []
+2022-08-10 03:53:30,665 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:53:30,665 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:53:40,775 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:53:40,776 - telegram.bot - DEBUG - []
+2022-08-10 03:53:40,776 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:53:40,776 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:53:50,938 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:53:50,938 - telegram.bot - DEBUG - []
+2022-08-10 03:53:50,939 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:53:50,939 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:53:56,408 - telegram.bot - DEBUG - Getting updates: [147900157]
+2022-08-10 03:53:56,410 - telegram.bot - DEBUG - [<telegram.update.Update object at 0x0000021594797A08>]
+2022-08-10 03:53:56,411 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:53:56,411 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:53:56,412 - telegram.ext.dispatcher - DEBUG - Processing Update: {'message': {'photo': [], 'date': 1660089236, 'message_id': 379, 'chat': {'id': 114541721, 'last_name': 'Hell', 'username': 'Goto_hel', 'type': 'private', 'first_name': 'Goto'}, 'entities': [{'type': 'bot_command', 'offset': 0, 'length': 7}], 'supergroup_chat_created': False, 'channel_chat_created': False, 'text': '/newcat', 'new_chat_members': [], 'delete_chat_photo': False, 'caption_entities': [], 'group_chat_created': False, 'new_chat_photo': [], 'from': {'id': 114541721, 'is_bot': False, 'last_name': 'Hell', 'first_name': 'Goto', 'username': 'Goto_hel', 'language_code': 'en'}}, 'update_id': 147900157}
+2022-08-10 03:53:56,439 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.thecatapi.com:443
+2022-08-10 03:53:56,983 - urllib3.connectionpool - DEBUG - https://api.thecatapi.com:443 "GET /v1/images/search HTTP/1.1" 200 89
+2022-08-10 03:53:56,990 - telegram.bot - DEBUG - Entering: send_photo
+2022-08-10 03:53:57,416 - telegram.bot - DEBUG - {'photo': [{'file_id': 'AgACAgQAAxkDAAIBfGLy85U6Hd9pNYH1XD0T-8DWT7JxAAKoqTEbBMrsU8IqvIr7UEtBAQADAgADcwADKQQ', 'file_size': 1268, 'file_unique_id': 'AQADqKkxGwTK7FN4', 'width': 90, 'height': 68}, {'file_id': 'AgACAgQAAxkDAAIBfGLy85U6Hd9pNYH1XD0T-8DWT7JxAAKoqTEbBMrsU8IqvIr7UEtBAQADAgADbQADKQQ', 'file_size': 25094, 'file_unique_id': 'AQADqKkxGwTK7FNy', 'width': 320, 'height': 241}, {'file_id': 'AgACAgQAAxkDAAIBfGLy85U6Hd9pNYH1XD0T-8DWT7JxAAKoqTEbBMrsU8IqvIr7UEtBAQADAgADeAADKQQ', 'file_size': 59337, 'file_unique_id': 'AQADqKkxGwTK7FN9', 'width': 650, 'height': 489}], 'date': 1660089237, 'message_id': 380, 'chat': {'id': 114541721, 'last_name': 'Hell', 'username': 'Goto_hel', 'type': 'private', 'first_name': 'Goto'}, 'entities': [], 'supergroup_chat_created': False, 'channel_chat_created': False, 'new_chat_members': [], 'delete_chat_photo': False, 'caption_entities': [], 'group_chat_created': False, 'new_chat_photo': [], 'from': {'id': 5477747318, 'is_bot': True, 'first_name': 'Timbot', 'username': 'Timbbbot'}}
+2022-08-10 03:53:57,419 - telegram.bot - DEBUG - Exiting: send_photo
+2022-08-10 03:53:57,419 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "kittybot.py", line 48, in new_cat
+    logging.WARNING('ещё один кот отравлен')
+TypeError: 'int' object is not callable
+2022-08-10 03:54:06,533 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:54:06,534 - telegram.bot - DEBUG - []
+2022-08-10 03:54:06,534 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:54:06,534 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:54:16,637 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:54:16,637 - telegram.bot - DEBUG - []
+2022-08-10 03:54:16,638 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:54:16,638 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:54:26,751 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:54:26,752 - telegram.bot - DEBUG - []
+2022-08-10 03:54:26,752 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:54:26,753 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:54:36,855 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:54:36,857 - telegram.bot - DEBUG - []
+2022-08-10 03:54:36,857 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:54:36,857 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:54:47,055 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:54:47,056 - telegram.bot - DEBUG - []
+2022-08-10 03:54:47,056 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:54:47,056 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:54:57,191 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:54:57,192 - telegram.bot - DEBUG - []
+2022-08-10 03:54:57,192 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:54:57,192 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:55:02,072 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2022-08-10 03:55:02,073 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2022-08-10 03:55:02,073 - apscheduler.scheduler - DEBUG - Looking for jobs to run
+2022-08-10 03:55:02,074 - apscheduler.scheduler - DEBUG - No jobs; waiting until a job is added
+2022-08-10 03:55:02,075 - telegram.ext.updater - DEBUG - Stopping Updater and Dispatcher...
+2022-08-10 03:55:02,075 - telegram.ext.updater - DEBUG - Requesting Dispatcher to stop...
+2022-08-10 03:55:02,947 - telegram.ext.dispatcher - DEBUG - orderly stopping
+2022-08-10 03:55:02,948 - telegram.ext.dispatcher - DEBUG - Dispatcher thread stopped
+2022-08-10 03:55:02,948 - telegram.ext.updater - DEBUG - Bot:5477747318:dispatcher - ended
+2022-08-10 03:55:02,963 - telegram.ext.dispatcher - DEBUG - Waiting for async thread 1/4 to end
+2022-08-10 03:55:02,964 - telegram.ext.dispatcher - DEBUG - Closing run_async thread Bot:5477747318:worker:58b9849e-3c7f-4753-a508-870e189ed52a_0/4
+2022-08-10 03:55:02,964 - telegram.ext.dispatcher - DEBUG - Closing run_async thread Bot:5477747318:worker:58b9849e-3c7f-4753-a508-870e189ed52a_1/4
+2022-08-10 03:55:02,965 - telegram.ext.dispatcher - DEBUG - Closing run_async thread Bot:5477747318:worker:58b9849e-3c7f-4753-a508-870e189ed52a_2/4
+2022-08-10 03:55:02,965 - telegram.ext.dispatcher - DEBUG - Closing run_async thread Bot:5477747318:worker:58b9849e-3c7f-4753-a508-870e189ed52a_3/4
+2022-08-10 03:55:02,967 - telegram.ext.dispatcher - DEBUG - async thread 1/4 has ended
+2022-08-10 03:55:02,967 - telegram.ext.dispatcher - DEBUG - Waiting for async thread 2/4 to end
+2022-08-10 03:55:02,968 - telegram.ext.dispatcher - DEBUG - async thread 2/4 has ended
+2022-08-10 03:55:02,968 - telegram.ext.dispatcher - DEBUG - Waiting for async thread 3/4 to end
+2022-08-10 03:55:02,968 - telegram.ext.dispatcher - DEBUG - async thread 3/4 has ended
+2022-08-10 03:55:02,968 - telegram.ext.dispatcher - DEBUG - Waiting for async thread 4/4 to end
+2022-08-10 03:55:02,969 - telegram.ext.dispatcher - DEBUG - async thread 4/4 has ended
+2022-08-10 03:55:02,969 - telegram.ext.updater - DEBUG - Waiting for Bot:5477747318:dispatcher thread to end
+2022-08-10 03:55:02,969 - telegram.ext.updater - DEBUG - Bot:5477747318:dispatcher thread has ended
+2022-08-10 03:55:02,969 - telegram.ext.updater - DEBUG - Waiting for Bot:5477747318:updater thread to end
+2022-08-10 03:55:07,297 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:55:07,298 - telegram.bot - DEBUG - []
+2022-08-10 03:55:07,298 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:55:07,298 - telegram.ext.updater - DEBUG - Bot:5477747318:updater - ended
+2022-08-10 03:55:07,299 - telegram.ext.updater - DEBUG - Bot:5477747318:updater thread has ended
+2022-08-10 03:55:10,803 - telegram.ext.dispatcher - DEBUG - Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x00000199A27E6458>
+2022-08-10 03:55:10,805 - apscheduler.scheduler - INFO - Scheduler started
+2022-08-10 03:55:10,806 - apscheduler.scheduler - DEBUG - Looking for jobs to run
+2022-08-10 03:55:10,807 - telegram.bot - DEBUG - Entering: get_me
+2022-08-10 03:55:10,807 - apscheduler.scheduler - DEBUG - No jobs; waiting until a job is added
+2022-08-10 03:55:11,283 - telegram.bot - DEBUG - {'is_bot': True, 'supports_inline_queries': False, 'can_read_all_group_messages': False, 'can_join_groups': True, 'id': 5477747318, 'first_name': 'Timbot', 'username': 'Timbbbot'}
+2022-08-10 03:55:11,284 - telegram.bot - DEBUG - Exiting: get_me
+2022-08-10 03:55:11,285 - telegram.ext.updater - DEBUG - Bot:5477747318:dispatcher - started
+2022-08-10 03:55:11,287 - telegram.ext.updater - DEBUG - Bot:5477747318:updater - started
+2022-08-10 03:55:11,287 - telegram.ext.updater - DEBUG - Updater thread started (polling)
+2022-08-10 03:55:11,290 - telegram.ext.updater - DEBUG - Start network loop retry bootstrap del webhook
+2022-08-10 03:55:11,290 - telegram.ext.updater - DEBUG - Waiting for Dispatcher and polling to start
+2022-08-10 03:55:11,291 - telegram.ext.updater - DEBUG - Deleting webhook
+2022-08-10 03:55:11,293 - telegram.bot - DEBUG - Entering: delete_webhook
+2022-08-10 03:55:11,294 - telegram.ext.dispatcher - DEBUG - Dispatcher started
+2022-08-10 03:55:11,396 - telegram.bot - DEBUG - True
+2022-08-10 03:55:11,396 - telegram.bot - DEBUG - Exiting: delete_webhook
+2022-08-10 03:55:11,396 - telegram.ext.updater - DEBUG - Bootstrap done
+2022-08-10 03:55:11,397 - telegram.ext.updater - DEBUG - Start network loop retry getting Updates
+2022-08-10 03:55:11,397 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:55:19,226 - telegram.bot - DEBUG - Getting updates: [147900158]
+2022-08-10 03:55:19,227 - telegram.bot - DEBUG - [<telegram.update.Update object at 0x00000199A2807A08>]
+2022-08-10 03:55:19,228 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:55:19,228 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:55:19,228 - telegram.ext.dispatcher - DEBUG - Processing Update: {'message': {'text': '/newcat', 'group_chat_created': False, 'chat': {'id': 114541721, 'username': 'Goto_hel', 'type': 'private', 'last_name': 'Hell', 'first_name': 'Goto'}, 'date': 1660089319, 'delete_chat_photo': False, 'message_id': 381, 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'supergroup_chat_created': False, 'entities': [{'type': 'bot_command', 'length': 7, 'offset': 0}], 'caption_entities': [], 'channel_chat_created': False, 'from': {'is_bot': False, 'language_code': 'en', 'last_name': 'Hell', 'id': 114541721, 'first_name': 'Goto', 'username': 'Goto_hel'}}, 'update_id': 147900158}
+2022-08-10 03:55:19,251 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.thecatapi.com:443
+2022-08-10 03:55:19,764 - urllib3.connectionpool - DEBUG - https://api.thecatapi.com:443 "GET /v1/images/search HTTP/1.1" 200 89
+2022-08-10 03:55:19,771 - telegram.bot - DEBUG - Entering: send_photo
+2022-08-10 03:55:20,211 - telegram.bot - DEBUG - {'group_chat_created': False, 'chat': {'id': 114541721, 'username': 'Goto_hel', 'type': 'private', 'last_name': 'Hell', 'first_name': 'Goto'}, 'date': 1660089320, 'delete_chat_photo': False, 'message_id': 382, 'photo': [{'file_size': 1425, 'height': 90, 'file_unique_id': 'AQADqKgxG4KuRVN4', 'file_id': 'AgACAgQAAxkDAAIBfmLy8-hvdZaFHXKG4V4iVgXWjO2OAAKoqDEbgq5FU8h7nJOWLQmqAQADAgADcwADKQQ', 'width': 60}, {'file_size': 16108, 'height': 320, 'file_unique_id': 'AQADqKgxG4KuRVNy', 'file_id': 'AgACAgQAAxkDAAIBfmLy8-hvdZaFHXKG4V4iVgXWjO2OAAKoqDEbgq5FU8h7nJOWLQmqAQADAgADbQADKQQ', 'width': 213}, {'file_size': 31253, 'height': 500, 'file_unique_id': 'AQADqKgxG4KuRVN9', 'file_id': 'AgACAgQAAxkDAAIBfmLy8-hvdZaFHXKG4V4iVgXWjO2OAAKoqDEbgq5FU8h7nJOWLQmqAQADAgADeAADKQQ', 'width': 333}], 'new_chat_members': [], 'new_chat_photo': [], 'supergroup_chat_created': False, 'entities': [], 'caption_entities': [], 'channel_chat_created': False, 'from': {'is_bot': True, 'id': 5477747318, 'first_name': 'Timbot', 'username': 'Timbbbot'}}
+2022-08-10 03:55:20,212 - telegram.bot - DEBUG - Exiting: send_photo
+2022-08-10 03:55:20,212 - telegram.ext.dispatcher - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\dispatcher.py", line 555, in process_update
+    handler.handle_update(update, self, check, context)
+  File "C:\Dev\kittybot\venv\lib\site-packages\telegram\ext\handler.py", line 198, in handle_update
+    return self.callback(update, context)
+  File "kittybot.py", line 48, in new_cat
+    logger.WARNING('ещё один кот отравлен')
+AttributeError: 'Logger' object has no attribute 'WARNING'
+2022-08-10 03:55:29,337 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:55:29,337 - telegram.bot - DEBUG - []
+2022-08-10 03:55:29,338 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:55:29,338 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:55:39,468 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:55:39,468 - telegram.bot - DEBUG - []
+2022-08-10 03:55:39,469 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:55:39,469 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:55:49,621 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:55:49,621 - telegram.bot - DEBUG - []
+2022-08-10 03:55:49,622 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:55:49,622 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:55:56,688 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2022-08-10 03:55:56,689 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2022-08-10 03:55:56,689 - apscheduler.scheduler - DEBUG - Looking for jobs to run
+2022-08-10 03:55:56,690 - apscheduler.scheduler - DEBUG - No jobs; waiting until a job is added
+2022-08-10 03:55:56,691 - telegram.ext.updater - DEBUG - Stopping Updater and Dispatcher...
+2022-08-10 03:55:56,692 - telegram.ext.updater - DEBUG - Requesting Dispatcher to stop...
+2022-08-10 03:55:57,524 - telegram.ext.dispatcher - DEBUG - orderly stopping
+2022-08-10 03:55:57,525 - telegram.ext.dispatcher - DEBUG - Dispatcher thread stopped
+2022-08-10 03:55:57,525 - telegram.ext.updater - DEBUG - Bot:5477747318:dispatcher - ended
+2022-08-10 03:55:57,571 - telegram.ext.dispatcher - DEBUG - Waiting for async thread 1/4 to end
+2022-08-10 03:55:57,572 - telegram.ext.dispatcher - DEBUG - Closing run_async thread Bot:5477747318:worker:aaa50595-6d14-4bb6-aa0f-96017adfe49f_0/4
+2022-08-10 03:55:57,572 - telegram.ext.dispatcher - DEBUG - Closing run_async thread Bot:5477747318:worker:aaa50595-6d14-4bb6-aa0f-96017adfe49f_1/4
+2022-08-10 03:55:57,573 - telegram.ext.dispatcher - DEBUG - Closing run_async thread Bot:5477747318:worker:aaa50595-6d14-4bb6-aa0f-96017adfe49f_2/4
+2022-08-10 03:55:57,573 - telegram.ext.dispatcher - DEBUG - Closing run_async thread Bot:5477747318:worker:aaa50595-6d14-4bb6-aa0f-96017adfe49f_3/4
+2022-08-10 03:55:57,574 - telegram.ext.dispatcher - DEBUG - async thread 1/4 has ended
+2022-08-10 03:55:57,576 - telegram.ext.dispatcher - DEBUG - Waiting for async thread 2/4 to end
+2022-08-10 03:55:57,576 - telegram.ext.dispatcher - DEBUG - async thread 2/4 has ended
+2022-08-10 03:55:57,577 - telegram.ext.dispatcher - DEBUG - Waiting for async thread 3/4 to end
+2022-08-10 03:55:57,578 - telegram.ext.dispatcher - DEBUG - async thread 3/4 has ended
+2022-08-10 03:55:57,578 - telegram.ext.dispatcher - DEBUG - Waiting for async thread 4/4 to end
+2022-08-10 03:55:57,579 - telegram.ext.dispatcher - DEBUG - async thread 4/4 has ended
+2022-08-10 03:55:57,579 - telegram.ext.updater - DEBUG - Waiting for Bot:5477747318:dispatcher thread to end
+2022-08-10 03:55:57,580 - telegram.ext.updater - DEBUG - Bot:5477747318:dispatcher thread has ended
+2022-08-10 03:55:57,580 - telegram.ext.updater - DEBUG - Waiting for Bot:5477747318:updater thread to end
+2022-08-10 03:55:59,749 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:55:59,750 - telegram.bot - DEBUG - []
+2022-08-10 03:55:59,750 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:55:59,750 - telegram.ext.updater - DEBUG - Bot:5477747318:updater - ended
+2022-08-10 03:55:59,751 - telegram.ext.updater - DEBUG - Bot:5477747318:updater thread has ended
+2022-08-10 03:56:34,208 - telegram.ext.dispatcher - DEBUG - Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x0000019980806458>
+2022-08-10 03:56:34,210 - apscheduler.scheduler - INFO - Scheduler started
+2022-08-10 03:56:34,211 - apscheduler.scheduler - DEBUG - Looking for jobs to run
+2022-08-10 03:56:34,212 - apscheduler.scheduler - DEBUG - No jobs; waiting until a job is added
+2022-08-10 03:56:34,212 - telegram.bot - DEBUG - Entering: get_me
+2022-08-10 03:56:35,280 - telegram.bot - DEBUG - {'first_name': 'Timbot', 'id': 5477747318, 'username': 'Timbbbot', 'supports_inline_queries': False, 'is_bot': True, 'can_join_groups': True, 'can_read_all_group_messages': False}
+2022-08-10 03:56:35,280 - telegram.bot - DEBUG - Exiting: get_me
+2022-08-10 03:56:35,281 - telegram.ext.updater - DEBUG - Bot:5477747318:dispatcher - started
+2022-08-10 03:56:35,283 - telegram.ext.updater - DEBUG - Bot:5477747318:updater - started
+2022-08-10 03:56:35,283 - telegram.ext.updater - DEBUG - Updater thread started (polling)
+2022-08-10 03:56:35,283 - telegram.ext.updater - DEBUG - Start network loop retry bootstrap del webhook
+2022-08-10 03:56:35,288 - telegram.ext.updater - DEBUG - Deleting webhook
+2022-08-10 03:56:35,288 - telegram.bot - DEBUG - Entering: delete_webhook
+2022-08-10 03:56:35,290 - telegram.ext.updater - DEBUG - Waiting for Dispatcher and polling to start
+2022-08-10 03:56:35,293 - telegram.ext.dispatcher - DEBUG - Dispatcher started
+2022-08-10 03:56:35,418 - telegram.bot - DEBUG - True
+2022-08-10 03:56:35,419 - telegram.bot - DEBUG - Exiting: delete_webhook
+2022-08-10 03:56:35,419 - telegram.ext.updater - DEBUG - Bootstrap done
+2022-08-10 03:56:35,419 - telegram.ext.updater - DEBUG - Start network loop retry getting Updates
+2022-08-10 03:56:35,420 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:56:45,615 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:56:45,615 - telegram.bot - DEBUG - []
+2022-08-10 03:56:45,615 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:56:45,616 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:56:55,769 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:56:55,769 - telegram.bot - DEBUG - []
+2022-08-10 03:56:55,769 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:56:55,769 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:57:05,877 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:57:05,878 - telegram.bot - DEBUG - []
+2022-08-10 03:57:05,878 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:57:05,878 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:57:16,147 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:57:16,147 - telegram.bot - DEBUG - []
+2022-08-10 03:57:16,148 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:57:16,148 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:57:26,268 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:57:26,269 - telegram.bot - DEBUG - []
+2022-08-10 03:57:26,269 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:57:26,269 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:57:36,380 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:57:36,381 - telegram.bot - DEBUG - []
+2022-08-10 03:57:36,381 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:57:36,381 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:57:38,389 - telegram.bot - DEBUG - Getting updates: [147900159]
+2022-08-10 03:57:38,391 - telegram.bot - DEBUG - [<telegram.update.Update object at 0x0000019980827A08>]
+2022-08-10 03:57:38,392 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:57:38,392 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:57:38,393 - telegram.ext.dispatcher - DEBUG - Processing Update: {'message': {'entities': [{'type': 'bot_command', 'length': 7, 'offset': 0}], 'text': '/newcat', 'supergroup_chat_created': False, 'caption_entities': [], 'group_chat_created': False, 'message_id': 383, 'new_chat_photo': [], 'photo': [], 'channel_chat_created': False, 'delete_chat_photo': False, 'date': 1660089458, 'chat': {'type': 'private', 'username': 'Goto_hel', 'first_name': 'Goto', 'id': 114541721, 'last_name': 'Hell'}, 'new_chat_members': [], 'from': {'first_name': 'Goto', 'language_code': 'en', 'last_name': 'Hell', 'id': 114541721, 'username': 'Goto_hel', 'is_bot': False}}, 'update_id': 147900159}
+2022-08-10 03:57:38,418 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.thecatapi.com:443
+2022-08-10 03:57:39,290 - urllib3.connectionpool - DEBUG - https://api.thecatapi.com:443 "GET /v1/images/search HTTP/1.1" 200 89
+2022-08-10 03:57:39,300 - telegram.bot - DEBUG - Entering: send_photo
+2022-08-10 03:57:39,783 - telegram.bot - DEBUG - {'entities': [], 'supergroup_chat_created': False, 'caption_entities': [], 'group_chat_created': False, 'message_id': 384, 'new_chat_photo': [], 'photo': [{'width': 90, 'height': 67, 'file_unique_id': 'AQADjqgxG7ovRFN4', 'file_id': 'AgACAgQAAxkDAAIBgGLy9HSe8lj_AbzX9SsHNS3WmfDDAAKOqDEbui9EU2_bjMrqGj6dAQADAgADcwADKQQ', 'file_size': 1218}, {'width': 320, 'height': 240, 'file_unique_id': 'AQADjqgxG7ovRFNy', 'file_id': 'AgACAgQAAxkDAAIBgGLy9HSe8lj_AbzX9SsHNS3WmfDDAAKOqDEbui9EU2_bjMrqGj6dAQADAgADbQADKQQ', 'file_size': 18228}, {'width': 500, 'height': 375, 'file_unique_id': 'AQADjqgxG7ovRFN9', 'file_id': 'AgACAgQAAxkDAAIBgGLy9HSe8lj_AbzX9SsHNS3WmfDDAAKOqDEbui9EU2_bjMrqGj6dAQADAgADeAADKQQ', 'file_size': 51054}], 'channel_chat_created': False, 'delete_chat_photo': False, 'date': 1660089460, 'chat': {'type': 'private', 'username': 'Goto_hel', 'first_name': 'Goto', 'id': 114541721, 'last_name': 'Hell'}, 'new_chat_members': [], 'from': {'first_name': 'Timbot', 'id': 5477747318, 'username': 'Timbbbot', 'is_bot': True}}
+2022-08-10 03:57:39,784 - telegram.bot - DEBUG - Exiting: send_photo
+2022-08-10 03:57:39,785 - __main__ - WARNING - ещё один кот отравлен
+2022-08-10 03:57:48,582 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:57:48,583 - telegram.bot - DEBUG - []
+2022-08-10 03:57:48,584 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:57:48,584 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:57:58,694 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:57:58,694 - telegram.bot - DEBUG - []
+2022-08-10 03:57:58,694 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:57:58,694 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:58:08,811 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:58:08,812 - telegram.bot - DEBUG - []
+2022-08-10 03:58:08,812 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:58:08,813 - telegram.bot - DEBUG - Entering: get_updates
+2022-08-10 03:58:10,880 - telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
+2022-08-10 03:58:10,881 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2022-08-10 03:58:10,882 - apscheduler.scheduler - DEBUG - Looking for jobs to run
+2022-08-10 03:58:10,883 - apscheduler.scheduler - DEBUG - No jobs; waiting until a job is added
+2022-08-10 03:58:10,884 - telegram.ext.updater - DEBUG - Stopping Updater and Dispatcher...
+2022-08-10 03:58:10,884 - telegram.ext.updater - DEBUG - Requesting Dispatcher to stop...
+2022-08-10 03:58:11,074 - telegram.ext.dispatcher - DEBUG - orderly stopping
+2022-08-10 03:58:11,074 - telegram.ext.dispatcher - DEBUG - Dispatcher thread stopped
+2022-08-10 03:58:11,075 - telegram.ext.updater - DEBUG - Bot:5477747318:dispatcher - ended
+2022-08-10 03:58:11,106 - telegram.ext.dispatcher - DEBUG - Waiting for async thread 1/4 to end
+2022-08-10 03:58:11,106 - telegram.ext.dispatcher - DEBUG - Closing run_async thread Bot:5477747318:worker:3be2aebf-1990-4449-95d2-ab92800a3476_0/4
+2022-08-10 03:58:11,106 - telegram.ext.dispatcher - DEBUG - Closing run_async thread Bot:5477747318:worker:3be2aebf-1990-4449-95d2-ab92800a3476_1/4
+2022-08-10 03:58:11,107 - telegram.ext.dispatcher - DEBUG - Closing run_async thread Bot:5477747318:worker:3be2aebf-1990-4449-95d2-ab92800a3476_2/4
+2022-08-10 03:58:11,107 - telegram.ext.dispatcher - DEBUG - Closing run_async thread Bot:5477747318:worker:3be2aebf-1990-4449-95d2-ab92800a3476_3/4
+2022-08-10 03:58:11,109 - telegram.ext.dispatcher - DEBUG - async thread 1/4 has ended
+2022-08-10 03:58:11,110 - telegram.ext.dispatcher - DEBUG - Waiting for async thread 2/4 to end
+2022-08-10 03:58:11,110 - telegram.ext.dispatcher - DEBUG - async thread 2/4 has ended
+2022-08-10 03:58:11,110 - telegram.ext.dispatcher - DEBUG - Waiting for async thread 3/4 to end
+2022-08-10 03:58:11,110 - telegram.ext.dispatcher - DEBUG - async thread 3/4 has ended
+2022-08-10 03:58:11,111 - telegram.ext.dispatcher - DEBUG - Waiting for async thread 4/4 to end
+2022-08-10 03:58:11,111 - telegram.ext.dispatcher - DEBUG - async thread 4/4 has ended
+2022-08-10 03:58:11,112 - telegram.ext.updater - DEBUG - Waiting for Bot:5477747318:dispatcher thread to end
+2022-08-10 03:58:11,112 - telegram.ext.updater - DEBUG - Bot:5477747318:dispatcher thread has ended
+2022-08-10 03:58:11,112 - telegram.ext.updater - DEBUG - Waiting for Bot:5477747318:updater thread to end
+2022-08-10 03:58:19,020 - telegram.bot - DEBUG - No new updates found.
+2022-08-10 03:58:19,020 - telegram.bot - DEBUG - []
+2022-08-10 03:58:19,020 - telegram.bot - DEBUG - Exiting: get_updates
+2022-08-10 03:58:19,020 - telegram.ext.updater - DEBUG - Bot:5477747318:updater - ended
+2022-08-10 03:58:19,021 - telegram.ext.updater - DEBUG - Bot:5477747318:updater thread has ended

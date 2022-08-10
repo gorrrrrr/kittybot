@@ -1,4 +1,8 @@
-"""Это бот, отправляющий котиков."""
+"""Это бот, отправляющий котиков.
+
+Хочу добавить сюда counter для подсчёта отправленных котиков.
+Хочу добавить возможность рассылки сообщения всем собеседникам бота.
+"""
 import logging
 import os
 
@@ -14,7 +18,13 @@ URL = 'https://api.thecatapi.com/v1/images/search'
 
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    level=logging.INFO)
+    filename='program.log',
+    level=logging.DEBUG)
+
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.WARNING)
+handler = logging.FileHandler('kitty.log')
+logger.addHandler(handler)
 
 
 def get_new_image():
@@ -35,6 +45,7 @@ def new_cat(update, context):
     """Отправить нового кота."""
     chat = update.effective_chat
     context.bot.send_photo(chat.id, get_new_image())
+    logger.warning('ещё один кот отравлен')
 
 
 def bot_writes_by_himself():
@@ -61,6 +72,7 @@ def wake_up(update, context):
         reply_markup=button,
     )
     context.bot.send_photo(chat.id, get_new_image())
+    logger.warning('Новая рега + 1 кот')
 
 
 def main():
